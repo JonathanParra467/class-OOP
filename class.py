@@ -1,5 +1,13 @@
+"""
+Assignment Steps:
+
+Class Creation: Design a class named Person with the following data: name, address, age, and phone number.
+Accessor and Mutator Methods: Write get and set methods for each piece of data. These methods allow you to access and change the data safely.
+Creating Instances: Write a program that creates three instances (objects) of the Person class. Use one instance for your made-up information and the other two for imaginary friends or family members.
+Display Data: Print out the information stored in each instance. Ensure the output is formatted and easy to read. You need to print out all the data for each. You can create a method that prints everything or call each get function one at a time.
+"""
 class Student:
-    # Class variable
+
     school_name = "McHenry County College"
 
     def __init__(self, first_name, last_name, student_id, grade_level="Freshman"):
@@ -9,7 +17,6 @@ class Student:
         self.__student_id = student_id
         self.__grade_level = grade_level
 
-    # Getter and Setter for first_name
     def get_first_name(self):
         return self.__first_name
     
@@ -34,18 +41,15 @@ class Student:
     def set_grade_level(self, value):
         self.__grade_level = value
 
-    # Method to print student details
     def print_student_details(self):
         print("Student Details:", vars(self))
     
-    # Method to print basic info about the student
     def print_info(self):
         print(self.__first_name)
         print(self.__last_name)
         print(self.__student_id)
         print(self.__grade_level)
 
-# Main function to demonstrate usage of the Student class
 def main():
     
     student1 = Student("John", "Deven", "123456", "Sophomore")
