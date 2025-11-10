@@ -54,6 +54,7 @@ def main():
     
     student1 = Student("John", "Deven", "123456", "Sophomore")
     student2 = Student("serge", "Smith", "789012", "Freshman")
+    student3 = Student("ivan", "andrew", "475612", "senior")
 
     print(student1.get_first_name())
     print(student1.get_last_name())
@@ -65,6 +66,9 @@ def main():
     print(student2.get_student_id())
     print(student2.get_grade_level())
      
-
+    print(student3.get_first_name())
+    print(student3.get_last_name())
+    print(student3.get_student_id())
+    print(student3.get_grade_level())
 
 main()
